@@ -1,0 +1,119 @@
+<!--
+Author: Colorlib
+Author URL: https://colorlib.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sociologistic Stuff</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="{% static 'css/style.css' %}"  rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme hfiles -->
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+
+<!-- //web font -->
+<style>
+	.center {
+  display: block;
+  margin-left: 30px;
+  margin-top: 10px;
+  width:55%;
+		border-radius: 20%;
+}
+</style>
+
+</head>
+<body style="background-image: url('{% static "images/sc1.jpg" %}');">
+	<!-- main -->
+	<div style="padding-top: 10px;">
+
+<table>
+	<tr>
+		<td>
+
+			<img  src="{% static 'images/sc4l.jpg' %}"  class="center" height="0" width="400">
+			<h2 style="margin-left: 495px; color: gold; font-family: 'Chalkboard SE'; font-size: xx-large;">Welcome To Sociologistic Stuff</h2>
+			<br>
+			<br>
+
+<br>
+
+		</td>
+		<td>
+			<br>
+
+<!--			<h1 style="color: indigo; font-family: 'Comic Sans MS'; font-size: large; margin-left: -2490px;">Sociologistic Stuff.</h1>-->
+		</td>
+	</tr>
+</table>
+
+
+	</div>
+<br>
+<br>
+<br>
+<br>
+
+
+	<div class="main-w3layouts wrapper" style="margin-top: -180px;">
+<!--		<h2 style="margin-left: 495px; color: gold; font-family: 'Chalkboard SE'; font-size: xx-large;">Welcome To Sociologistic Stuff</h2>-->
+		<div class="main-agileinfo">
+
+			<div class="agileits-top">
+				<form action="#" method="POST">
+					{% csrf_token %}
+					<h2 >Registration To New User </h2>
+					<br>
+					<br>
+
+					<input class="text" type="text" name="Username" placeholder="Username" required="">
+					<input class="text email" type="email" name="email" placeholder="Email" required="">
+					<input class="text" type="password" name="password" placeholder="Password" required="">
+					<input class="text w3lpass" type="password" name="password" placeholder="Confirm Password" required="">
+					<div class="wthree-text">
+						<label class="anim">
+							<input type="checkbox" class="checkbox" required="">
+							<span>I Agree To The Terms & Conditions</span>
+						</label>
+						<div class="clear"> </div>
+					</div>
+					 <input type="submit"  value="SIGN Up" >
+<!--					<button type="submit"><a href="index" target="_blank">Send Message</a></button>-->
+				</form>
+				<p style="color: black;"><h2>&nbspAlready Have a Account</h2> </p>
+					<form action="login" target="_blank">
+
+				<input type="submit" value="SIGN In"  >
+<!--				<a href="index.html" class="btn btn-default">Sign up</a>-->
+
+					</form>
+
+			</div>
+
+		</div>
+		<!-- copyright -->
+
+		<!-- //copyright -->
+		<ul class="colorlib-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<!-- //main -->
+</body>
+</html>
