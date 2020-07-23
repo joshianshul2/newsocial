@@ -74,27 +74,27 @@ WSGI_APPLICATION = 'social.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'social stuff',
-#         'USER': 'postgres',
-#         'PASSWORD':'anshul123',
-#         'HOST':'localhost',
-#         # 'PORT' :5432
-#         'listen_addresses':'*'
-#     }
-# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'SocialStuff',
-        'USER': 'root',
-        'PASSWORD': 'Anshul123',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'social stuff',
+        'USER': 'postgres',
+        'PASSWORD':'anshul123',
+        'HOST':'localhost',
+        # 'PORT' :5432
+        'listen_addresses':'*'
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'SocialStuff',
+#         'USER': 'root',
+#         'PASSWORD': 'Anshul123',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#     }
+# }
 
 
 

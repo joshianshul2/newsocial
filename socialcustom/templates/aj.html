@@ -28,7 +28,35 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		border-radius: 20%;
 }
 </style>
+ <script>
 
+            // Function to check Whether both passwords
+            // is same or not.
+            function checkPassword(form) {
+                password = form.password.value;
+                password2 = form.password2.value;
+
+                // If password not entered
+                if (password == '')
+                    alert ("Please enter Password");
+
+                // If confirm password not entered
+                else if (password2 == '')
+                    alert ("Please enter confirm password");
+
+                // If Not same return False.
+                else if (password != password2) {
+                    alert ("\nPassword did not match: Please try again...")
+                    return false;
+                }
+
+                // If same return True.
+                else{
+                    alert("Password Match: Welcome to Sociologistic Stuff!")
+                    return true;
+                }
+            }
+        </script>
 </head>
 <body style="background-image: url('{% static "images/sc1.jpg" %}');">
 	<!-- main -->
@@ -67,7 +95,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="main-agileinfo">
 
 			<div class="agileits-top">
-				<form action="#" method="POST">
+				<form action="#" method="POST" onSubmit = "return checkPassword(this)">
 					{% csrf_token %}
 					<h2 >Registration To New User </h2>
 					<br>
@@ -76,7 +104,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<input class="text" type="text" name="Username" placeholder="Username" required="">
 					<input class="text email" type="email" name="email" placeholder="Email" required="">
 					<input class="text" type="password" name="password" placeholder="Password" required="">
-					<input class="text w3lpass" type="password" name="password" placeholder="Confirm Password" required="">
+					<br>
+					<input  type="password" name="password2" placeholder="Confirm Password" required="">
+					<br>
 					<div class="wthree-text">
 						<label class="anim">
 							<input type="checkbox" class="checkbox" required="">
@@ -88,7 +118,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--					<button type="submit"><a href="index" target="_blank">Send Message</a></button>-->
 				</form>
 				<p style="color: black;"><h2>&nbspAlready Have a Account</h2> </p>
-					<form action="login" target="_blank">
+					<form action="enter0" target="_blank">
 
 				<input type="submit" value="SIGN In"  >
 <!--				<a href="index.html" class="btn btn-default">Sign up</a>-->

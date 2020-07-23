@@ -11,6 +11,7 @@
     <meta name="description" content="Blog Template">
     <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
     <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <!-- FontAwesome JS-->
     <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
@@ -19,7 +20,7 @@
     <link id="theme-style" rel="stylesheet" href="{% static 'css/theme-1.css' %}">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
 	<link rel="stylesheet" href="{% static 'css/fontawesome-all.min.css' %}">
-	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+<!--	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">-->
 	<link rel="stylesheet" type="text/css" href="{% static 'css/magnific-popup.css' %}"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 <!--	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>-->
@@ -121,7 +122,7 @@ p:last-child { margin-bottom: 0; }
 
 
     <header class="header text-center">	    
-	    <h1 class="blog-name pt-lg-4 mb-0"><a href="index.html">Sociologistic Stuff</a></h1>
+	    <h1 class="blog-name pt-lg-4 mb-0" ><a href="index.html">Sociologistic Stuff</a></h1>
         
 	    <nav class="navbar navbar-expand-lg navbar-dark" >
            
@@ -171,38 +172,61 @@ p:last-child { margin-bottom: 0; }
 <!--    Anji-->
 
 
-	<div class="main-wrapper">
+	<div class="main-wrapper" style="margin-top: -20px">
 	    <section class="cta-section theme-bg-light py-5">
 		    <div class="container text-center">
-			    <h2 class="heading">Welcome to Sociologistic Stuff</h2>
+			    <h4 style="color: indigo; font-family:comic sans;">Welcome to Sociologistic Stuff</h4>
+			    <p style="color:green; margin-top: -12px;">( A place to get all social stuff )</p>
 
-			    <div class="intro">Its a Platform to Interact to All Social Stuff At One Place.</div>
-			    <form class="signup-form form-inline justify-content-center pt-3">
+			    <!-- <div class="intro">Its a Platform to Interact to All Social Stuff At One Place.</div> -->
+			   <!--  <form class="signup-form form-inline justify-content-center pt-3">
                     <div class="form-group">
                         <label class="sr-only" for="semail">Your email</label>
                         <input type="email" id="semail" name="semail1" class="form-control mr-md-1 semail" placeholder="Enter email">
                     </div>
                     <button type="submit" class="btn btn-primary">Subscribe</button>
                 </form>
-		    </div><!--//container-->
+		    </div>//container-->
 
-
-	    </section>
+	     </section>
 <section id="tm-section-3" class="tm-section">
-						<div class="row mb-4">
-							<header class="col-xl-12"><h2 class="tm-text-shadow">Our Company </h2></header>
+	<br>
+						<div class="row mb-3">
+							<br>
+							<br>
+							<header class="col-xl-12"><h4 class="tm-text-shadow" style="font-family: Comic Sans MS; margin-top: 0px;">Our Company </h4></header>
+							<br>
 						</div>
 						<div class="row">
-							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
+							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-1">
 								<div class="media tm-bg-transparent-black tm-border-white">
 
-									<div class="media-body">
+									<div class="media-body" style="margin-top: 0px;">
 
-										<img  class="circular--square"  src="{% static 'images/f1.png' %}"  height="100" width="100" radius="10%">
+										<img  class="circular--square"   src="{% static 'images/f1.png' %}"  height="50" width="50" radius="10%">
 										<label><h3 >&nbsp&nbspFacebook </h3></label>
 											<br>
+																					
 											<br>
-										<p>FaceBook API is Implementing Here </p>
+
+									<div style="padding-left: 7px;">
+										<form>
+											<label>Username or Phone No</label>
+											<label style="margin-left: 58px; ">Password</label>
+											<br>
+											<input type="text" name="username">
+											
+				
+											<input style="margin-left: 25px;" type="Password" name="password">
+										<br>
+										<br>
+											<button style="margin-left:415px;" type="button" class="btn btn-primary">Submit</button>
+
+										</form>
+									
+
+										<p style="margin-top: -20px;">For more Details click here on <u style="color: yellow;"><a href="fb" >more details</a></u></p>
+									</div>
 									</div>
 								</div>
 							</div>
@@ -210,36 +234,91 @@ p:last-child { margin-bottom: 0; }
 								<div class="media tm-bg-transparent-black tm-border-white">
 
 									<div class="media-body">
-									<img  class="circular--square"  src="{% static 'images/twit.jpg' %}"  height="100" width="100" >
+									<img  class="circular--square"  src="{% static 'images/twit.jpg' %}"  height="50" width="50" >
 										<label><h3>&nbsp&nbsptwiter</h3></label>
 											<br>
 											<br>
-										<p> API of Twitter</p>
+										<div class="media-body" style="margin-top: 0px;">
+
+										
+
+									<div style="padding-left: 7px;">
+										<form>
+											<label>Username or Phone No</label>
+											<label style="margin-left: 58px; ">Password</label>
+											<br>
+											<input type="text" name="username">
+											
+				
+											<input style="margin-left: 25px;" type="Password" name="password">
+										<br>
+										<br>
+											<button style="margin-left:415px;" type="button" class="btn btn-primary">Submit</button>
+											<p style="margin-top: -20px;">For more Details click here on <u style="color: yellow;"><a href="twitter" >more details</a></u></p>
+										</form>
+									
+
+
+									</div>
+									</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
+							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-1">
 								<div class="media tm-bg-transparent-black tm-border-white">
 
 									<div class="media-body">
-									<img  class="circular--square"  src="{% static 'images/lk.jpg' %}"  height="100" width="100" >
+									<img  class="circular--square"  src="{% static 'images/lk.jpg' %}"  height="50" width="50" >
 										<label><h3>&nbsp&nbspLinkdien</h3></label>
 										<br>
 										<br>
-										<p>API of Linkdien.</p>
+										<div class="media-body" style="margin-top: 0px;">
+
+									<div style="padding-left: 7px;">
+										<form>
+											<label>Username or Phone No</label>
+											<label style="margin-left: 58px; ">Password</label>
+											<br>
+											<input type="text" name="username">
+											
+				
+											<input style="margin-left: 25px;" type="Password" name="password">
+										<br>
+											<br>
+											<button style="margin-left:415px;" type="button" class="btn btn-primary">Submit</button>
+											<p style="margin-top: -20px;">For more Details click here on <u style="color: yellow;"><a href="linkdien" >more details</a></u></p>
+										</form>
+									
+
+
+									</div>
+									</div>
 									</div>
 								</div>
 							</div>
-							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-4">
+							<div class="col-sm-12 col-md-6 col-lg-12 col-xl-6 mb-2">
 
 								<div class="media tm-bg-transparent-black tm-border-white">
 
 									<div class="media-body">
-										<img  class="circular--square"  src="{% static 'images/insta.jpg' %}"  height="100" width="100" >
+										<img  class="circular--square"  src="{% static 'images/insta.jpg' %}"  height="50" width="50" >
 										<label><h3>&nbsp&nbspInstagram</h3></label>
 										<br>
 										<br>
-										<p>API of Insta.</p>
+										<form>
+											<label>Username or Phone No</label>
+											<label style="margin-left: 58px; ">Password</label>
+											<br>
+											<input type="text" name="username">
+											
+				
+											<input style="margin-left: 25px;" type="Password" name="password">
+										<br>
+										<br>
+											<button style="margin-left:415px;" type="button" class="btn btn-primary">Submit</button>
+
+										</form>
+										<p style="margin-top: -20px;">For more Details click here on <u style="color: yellow;"><a href="insta" >more details</a></u></p>
 									</div>
 								</div>
 							</div>
