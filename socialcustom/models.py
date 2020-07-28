@@ -38,3 +38,32 @@ class User(models.Model):
     created_at = models.DateTimeField(auto_now_add = True)
     updated_at = models.DateTimeField(auto_now = True)
     objects = UserManager()
+
+class Profile1(models.Model) :
+    Username = models.CharField(max_length=30)
+    Biography = models.CharField(max_length= 260)
+    image = models.ImageField(upload_to="images")
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    # first_name = models.CharField(max_length=255)
+    # last_name = models.CharField(max_length=255)
+    # email = models.CharField(max_length=255)
+    # address = models.CharField(max_length=255)
+    # address2 =models.CharField(max_length=244)
+    # city = models.CharField(max_length=255)
+    # # state = models.CharField(max_length=255)
+    # zip = models.IntegerField()
+
+
+class Profile2(models.Model):
+        # Username = models.CharField(max_length=30)
+        # Biography = models.CharField(max_length=260)
+        first_name = models.CharField(max_length=255)
+        last_name = models.CharField(max_length=255)
+        email = models.CharField(max_length=255)
+        address = models.CharField(max_length=255)
+        address2 =models.CharField(max_length=244)
+        city = models.CharField(max_length=255)
+        state = models.CharField(max_length=255)
+        zip = models.IntegerField()
+

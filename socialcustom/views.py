@@ -116,7 +116,7 @@
 from django.shortcuts import render, HttpResponse, redirect
 from django.contrib import messages
 import bcrypt
-from .models import User,UserManager
+from .models import User,UserManager,Profile1,Profile2
 
 def index(request):
     return render(request, 'index2.html')
@@ -167,3 +167,70 @@ def linkdien(request):
 # insta
 def insta(request):
     return render(request,"insta.html")
+
+# profile
+def profile(request):
+    return render(request,"profile.html")
+# About us
+def aboutus(request):
+    return render(request,"about us.html")
+
+# Save Profile Username and Biography
+def saveprofile1(request):
+    if request.method == 'POST' :
+        user1=request.POST['Username']
+        print(user1)
+        biography1=request.POST['Biography']
+        # name1=request.POST['first_name']
+        # name2=request.POST['last_name']
+        # email1 = request.POST['email']
+        # add1= request.POST['address']
+        # add2 = request.POST['address2']
+        # city = request.POST['city']
+        # # state = request.POST['state']
+        # zip = request.POST['zip']
+        # anji=Profile(Username=user1,Biography=biography1,first_name=name1,last_name=name2,email=email1,address=add1,address2=add2,city=city,state=state,zip=zip)
+        anji=Profile1(Username=user1,Biography=biography1)
+        anji.save()
+        return redirect(success)
+
+    return render(request,'profile.html')
+# Save Profile remaining All
+def saveprofile2(request):
+
+    if request.method == 'POST' :
+        # user1=request.POST['Username']
+        # biography1=request.POST['Biography']
+        name1 = request.POST['first_name']
+        name2 = request.POST['last_name']
+        email1 = request.POST['email']
+        add1 = request.POST['address']
+        add2 = request.POST['address2']
+        city = request.POST['city']
+        state = request.POST['state']
+        zip = request.POST['zip']
+        anji=Profile2(first_name=name1,last_name=name2,email=email1,address=add1,address2=add2,city=city,state=state,zip=zip)
+        anji.save()
+        return redirect(success)
+
+    return render(request,'profile.html')
+
+def about_me(request):
+    # info = Profile1.objects.all()
+    # if request.method == 'POST':
+    # user1 = request.POST.get('Username', False)
+    # print(user1)
+    # if 'Username' in request.POST:
+    #     user1 = request.POST['Username']
+    # else:
+    #     is_private = False
+    place = Profile1.objects.get(Username='Anji')
+    print(place)
+    print(place.id)
+
+    return render(request, "about_me.html",{'info' : place})
+
+# FacebookAPI
+def fbapi(request):
+    return render(request,"fbapi.html")
+

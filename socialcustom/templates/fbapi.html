@@ -1,0 +1,185 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+
+<!--<title>FaceBook API</title>-->
+
+
+<!--</head>-->
+<!--<body>-->
+<!--&lt;!&ndash;<h1>Hello </h1>&ndash;&gt;-->
+
+<!--<script>-->
+<!--  window.fbAsyncInit = function()-->
+<!--{-->
+<!--    FB.init({-->
+<!--      appId      : '341311173527204',-->
+
+<!--    cookie     : true,-->
+
+<!--     xfbml      : true,-->
+
+<!--      version    : 'v7.0'-->
+<!--        });-->
+
+
+<!--  FB.AppEvents.logPageView();-->
+
+<!--  };-->
+
+
+<!--  (function(d, s, id){-->
+
+<!--  var js, fjs = d.getElementsByTagName(s)[0];-->
+
+<!--   if (d.getElementById(id)) {return;}-->
+
+<!--     js = d.createElement(s); js.id = id;-->
+
+<!--             js.src = "https://connect.facebook.net/en_US/sdk.js";-->
+
+<!--  fjs.parentNode.insertBefore(js, fjs);-->
+
+<!--    }-->
+<!--(document, 'script', 'facebook-jssdk'));-->
+
+
+<!--  //FB.getLoginStatus(function (response)-->
+<!-- {-->
+<!--    //        statusChangeCallback(response);-->
+<!--    //});-->
+
+<!--    function checkLoginState() {-->
+
+<!--            FB.api(-->
+<!--  '/341311173527204',-->
+<!--  'GET',-->
+<!--  {},-->
+
+<!--               function (response)-->
+<!-- {-->
+<!--                    console.log("video-" + response);-->
+<!--  }-->
+<!--);-->
+
+
+<!--  FB.getLoginStatus(function(response) {-->
+<!--      //alert(response);-->
+
+<!--   console.log(response);-->
+
+<!-- console.log(response.authResponse.accessToken);-->
+
+<!--      statusChangeCallback(response);-->
+<!--      });-->
+
+<!--    }-->
+
+
+<!--</script>-->
+
+<!--<div id="fb-root"></div>-->
+<!--<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=740364533406781&autoLogAppEvents=1" nonce="Us7grHLG"></script>-->
+<!--    <form id="form1" runat="server">-->
+<!--&lt;!&ndash;        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>&ndash;&gt;-->
+<!--        <div>-->
+<!--            <h1>Facebook Graph API</h1>-->
+<!--        <br />-->
+
+<!--            <fb:login-button-->
+<!--  scope="public_profile,email"-->
+<!--  onlogin="checkLoginState();"></fb:login-button >-->
+<!--  </div>-->
+<!--        <br />-->
+<!--        <br />-->
+<!--        </form>-->
+<!--<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>-->
+<!--&lt;!&ndash;<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>&ndash;&gt;-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Facebook Graph API</title>
+</head>
+<body>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '2022792394520958',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v7.0'
+        });
+
+    FB.AppEvents.logPageView();
+
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+             js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+
+    function checkLoginState() {
+
+            FB.api(
+  '/2022792394520958',
+  'GET',
+  {},
+                function (response) {
+                    console.log("video-" + response);
+  }
+);
+
+  // FB.getLoginStatus(function(response) {
+  //
+  //     console.log(response);
+  //     console.log(response.authResponse.accessToken);
+  //     statusChangeCallback(response);
+  //     });
+  //
+  //   }
+
+</script>
+    <div id="fb-root"></div>
+ <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=2022792394520958&autoLogAppEvents=1" nonce="9FbBhD68"></script>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=2022792394520958&autoLogAppEvents=1" nonce="3UIbSvlb"></script>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=2022792394520958&autoLogAppEvents=1" nonce="5RwdeBE0"></script>
+    <form id="form1" runat="server">
+        <div>
+            <h1>Facebook Graph API</h1>
+            <h2>
+                Hello World
+            </h2>
+        <br />
+            <fb:login-button
+  scope="public_profile,email"
+  onlogin="checkLoginState();">
+</fb:login-button>
+        </div>
+        <br />
+        <br />
+        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+    <br />
+        <br />
+        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&width=450&layout=standard&action=like&size=small&share=true&height=35&appId=2022792394520958" width="450" height="35" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+    <br />
+        <br />
+       <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5" data-width=""></div>
+        <br />
+        <br />
+        <div class="fb-group" data-href="https://www.facebook.com/groups/854789951558901/" data-width="280" data-show-social-context="true" data-show-metadata="false"></div>
+        </form>
+</body>
+</html>

@@ -119,6 +119,75 @@ p:last-child { margin-bottom: 0; }
 </head> 
 
 <body>
+<!--<script>-->
+<!--  window.fbAsyncInit = function()-->
+<!--{-->
+<!--    FB.init({-->
+<!--      appId      : '1347544922110305',-->
+
+<!--    cookie     : true,-->
+
+<!--     xfbml      : true,-->
+
+<!--      version    : 'v7.0'-->
+<!--        });-->
+
+
+<!--  FB.AppEvents.logPageView();-->
+
+<!--  };-->
+
+
+<!--  (function(d, s, id){-->
+
+<!--  var js, fjs = d.getElementsByTagName(s)[0];-->
+
+<!--   if (d.getElementById(id)) {return;}-->
+
+<!--     js = d.createElement(s); js.id = id;-->
+
+<!--             js.src = "https://connect.facebook.net/en_US/sdk.js";-->
+
+<!--  fjs.parentNode.insertBefore(js, fjs);-->
+
+<!--    }-->
+<!--(document, 'script', 'facebook-jssdk'));-->
+
+
+<!--  //FB.getLoginStatus(function (response)-->
+<!-- {-->
+<!--    //        statusChangeCallback(response);-->
+<!--    //});-->
+
+<!--    function checkLoginState() {-->
+
+<!--            FB.api(-->
+<!--  '/1347544922110305',-->
+<!--  'GET',-->
+<!--  {},-->
+
+<!--               function (response)-->
+<!-- {-->
+<!--                    console.log("video-" + response);-->
+<!--  }-->
+<!--);-->
+
+
+<!--  FB.getLoginStatus(function(response) {-->
+<!--      //alert(response);-->
+
+<!--   console.log(response);-->
+
+<!-- console.log(response.authResponse.accessToken);-->
+
+<!--      statusChangeCallback(response);-->
+<!--      });-->
+
+<!--    }-->
+
+
+<!--</script>-->
+
 
 
     <header class="header text-center">	    
@@ -134,7 +203,7 @@ p:last-child { margin-bottom: 0; }
 				<div class="profile-section pt-3 pt-lg-0">
 				    <img class="profile-image mb-3 rounded-circle mx-auto" src="{% static 'images/1.jpg' %}" alt="image" >
 					
-					<div class="bio mb-3">Hi, my name is Anshul Joshi. Briefly introduce yourself here. You can also provide a link to the about page.<br><a href="about.html">Find out more about me</a></div><!--//bio-->
+					<div class="bio mb-3">Hi, my name is Anshul Joshi. Briefly introduce yourself here. You can also provide a link to the about page.<br><a href="about_me">Find out more about me</a></div><!--//bio-->
 <!--					<ul class="social-list list-inline py-3 mx-auto">-->
 <!--			            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>-->
 <!--			            <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin-in fa-fw"></i></a></li>-->
@@ -152,10 +221,10 @@ p:last-child { margin-bottom: 0; }
 					    <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>DashBoard <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-					    <a class="nav-link" href="blog-post.html"><i class="fas fa-bookmark fa-fw mr-2"></i>Profile</a>
+					    <a class="nav-link" href="profile"><i class="fas fa-bookmark fa-fw mr-2"></i>Profile</a>
 					</li>
 					<li class="nav-item">
-					    <a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>About Us</a>
+					    <a class="nav-link" href="aboutus"><i class="fas fa-user fa-fw mr-2"></i>About Us</a>
 					</li>
 				</ul>
 				
@@ -203,28 +272,56 @@ p:last-child { margin-bottom: 0; }
 
 									<div class="media-body" style="margin-top: 0px;">
 
-										<img  class="circular--square"   src="{% static 'images/f1.png' %}"  height="50" width="50" radius="10%">
+										<img  class="circular--square"   src="{% static 'images/f1.png' %}"  height="100" width="100" radius="10%">
 										<label><h3 >&nbsp&nbspFacebook </h3></label>
 											<br>
 																					
 											<br>
-
+<!---->
 									<div style="padding-left: 7px;">
-										<form>
-											<label>Username or Phone No</label>
-											<label style="margin-left: 58px; ">Password</label>
-											<br>
-											<input type="text" name="username">
-											
-				
-											<input style="margin-left: 25px;" type="Password" name="password">
-										<br>
-										<br>
-											<button style="margin-left:415px;" type="button" class="btn btn-primary">Submit</button>
+<!--										<form>-->
+<!--											<label>Username or Phone No</label>-->
+<!--											<label style="margin-left: 58px; ">Password</label>-->
+<!--											<br>-->
+<!--											<input type="text" name="username">-->
+<!--											-->
+<!--				-->
+<!--											<input style="margin-left: 25px;" type="Password" name="password">-->
+<!--										<br>-->
+<!--										<br>-->
+<!--											<button style="margin-left:415px;" type="button" class="btn btn-primary">Submit</button>-->
 
-										</form>
-									
+<!--										</form>-->
+<!--										Facebook loginButton-->
+<!--										<div style="margin-left: 120px;" class="fb-login-button" data-size="large" data-button-type="continue_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false" data-width=""></div>-->
+<!--										<button id="myButton" class="float-left submit-button" >Home</button>-->
+<!--<div id="fb-root"></div>-->
+<!--<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=1347544922110305&autoLogAppEvents=1" nonce="5EIBk08J"></script>-->
+<!--    <form id="form1" runat="server">-->
+<!--&lt;!&ndash;        <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>&ndash;&gt;-->
+<!--        <div>-->
+<!--            <h1>Facebook Graph API</h1>-->
+<!--        <br />-->
 
+<!--            <fb:login-button-->
+<!--  scope="public_profile,email"-->
+<!--  onlogin="checkLoginState();"></fb:login-button >-->
+<form >
+	<button type="button" id="myButton">login Fbi</button>
+</form>
+										<!--  </div>-->
+<!--        <br />-->
+<!--        <br />-->
+<!--        </form>-->
+<!--<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>-->
+<!--<div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>-->
+
+
+<br>
+
+<br>
+										<br>
+										<div id="fb-root"></div>
 										<p style="margin-top: -20px;">For more Details click here on <u style="color: yellow;"><a href="fb" >more details</a></u></p>
 									</div>
 									</div>
@@ -360,7 +457,20 @@ p:last-child { margin-bottom: 0; }
 
 
        
-    <!-- Javascript -->          
+    <!-- Javascript -->
+<!--	<script>-->
+<!--		function checkLoginState() {-->
+<!--  FB.getLoginStatus(function(response) {-->
+<!--    statusChangeCallback(response);-->
+<!--  });-->
+<!--}-->
+<!--	</script>-->
+	<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "fbapi";
+    };
+</script>
+<!--	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0&appId=2022792394520958&autoLogAppEvents=1" nonce="5MdFAp1Q"></script>-->
     <script src="assets/plugins/jquery-3.3.1.min.js"></script>
     <script src="assets/plugins/popper.min.js"></script> 
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
